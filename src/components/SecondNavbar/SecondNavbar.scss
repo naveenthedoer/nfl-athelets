@@ -1,0 +1,39 @@
+.Second-Navbar-Container {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #f4f4f4;
+  .Each-List {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #555;
+    }
+  }
+  .Active-List {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #555;
+    position: relative;
+    &:after {
+      position: absolute;
+      content: '';
+      height: 4px;
+      background: #555555;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      width: 100%;
+      bottom: -14px;
+    }
+  }
+}

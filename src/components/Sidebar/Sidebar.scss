@@ -1,0 +1,123 @@
+.Sidebar-Container {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  width: 360px;
+  background: #FFFFFF;
+  height: calc(100vh - 56px);
+  box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  .Image-Container {
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(2, 57, 130, 0.6);
+    position: relative;
+    .Follow-Button {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      button {
+        background: #FFFFFF;
+        color: #333;
+        letter-spacing: 0.2px;
+      }
+    }
+    .NFL-Image {
+      position: absolute;
+      bottom: -34px;
+      left: 40px;
+      img {
+        height: 72px;
+      }
+    }
+  }
+  .Sidebar-Content {
+    margin: 40px 0 20px 0;
+    text-align: center;
+    .Name-Container {
+      text-align: center;
+      .Title {
+        font-size: 18px;
+        color: #7E7E7E;
+        font-weight: 400;
+      }
+      .Sub-Title {
+        font-size: 12px;
+        color: #ddd;
+        font-weight: 400;
+        margin-top: 4px;
+      }
+    }
+    .Posts-Followers-Following {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 20px 30px 12px 30px;
+      .Posts,.Followers,.Following {
+        .Value {
+          font-size: 18px;
+          color: #7E7E7E;
+          font-weight: 400;
+        }
+        .Title {
+          font-size: 12px;
+          color: #aaaaaa;
+          font-weight: 400;
+          margin-top: 4px;
+        }
+      }
+    }
+    .Message-Button {
+      button {
+        width: 240px;
+        font-size: 14px;
+        background: rgba(59, 52, 52, 1);
+        color: #fff;
+        font-weight: 300;
+        padding: 8px 0;
+        box-shadow: 0px 1px 5px 0px rgba(59, 52, 52, 0.2), 0px 2px 2px 0px rgba(59, 52, 52, 0.14), 0px 3px 1px -2px rgba(59, 52, 52, 0.12);
+      }
+    }
+  }
+  .Link-Description {
+    margin: 0 30px;
+    .Link {
+      display: flex;
+      align-items: center;
+      i {
+        font-size: 14px;
+        margin-right: 8px;
+      }
+      span {
+        color: blue;
+        font-size: 12px;
+        cursor: pointer;
+      }
+    }
+    .Description {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  }
+  .empty-space{
+    flex-grow: 1;
+  }
+  .Partners {
+    text-align: center;
+    margin: 20px 0;
+    .Title {
+      font-size: 18px;
+      color: #7E7E7E;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    .Companies {
+      img {
+        width: 56px;
+        margin-right: 20px;
+      }
+    }
+  }
+}

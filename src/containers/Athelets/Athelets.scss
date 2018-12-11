@@ -1,0 +1,17 @@
+.Athelets-Container {
+  height: 100vh;
+  width: 100vw;
+  .Main-Container {
+    height: calc(100vh - 56px);
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+    .Sidebar-Component {
+
+    }
+    .Display-Container {
+      width: calc(100vw - 360px);
+      height: 100%;
+    }
+  }
+}

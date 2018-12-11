@@ -1,0 +1,125 @@
+.AthletesList-Container {
+  margin: 20px;
+  height: calc(100%);
+  .Recommend-Share-Mention {
+    padding: 6px 16px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    font-size: 15px;
+    .Recommend,.Share {
+      padding: 6px 16px;
+      border: 1px solid #ccc;
+      margin-right: 20px;
+      cursor: pointer;
+      i {
+        margin-right: 4px;
+      }
+    }
+    .Mention {
+      padding: 6px 16px;
+      border: 1px solid #ccc;
+      margin-right: 0;
+      cursor: pointer;
+      span {
+        margin-right: 4px;
+      }
+    }
+    .Empty-Space {
+      flex-grow: 1;
+    }
+  }
+  .Search-Container {
+    position: relative;
+    margin-top: 14px;
+    input {
+      width: calc(100% - 40px);
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+      height: 40px;
+      border: none;
+      padding: 0 0 0 40px;
+      font-size: 16px;
+      &:focus {
+        outline: none;
+      }
+    }
+    i {
+      position: absolute;
+      top: 12px;
+      left: 14px;
+    }
+  }
+  .All-Cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    height: calc(100% - 204px);
+    overflow-y: auto;
+    .Each-Card {
+      position: relative;
+      width: 300px;
+      margin-bottom: 12px;
+      height: 356px;
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+      .Image {
+        width: 100%;
+        .Main-Image {
+          width: 100%;
+          height: 218px;
+        }
+        .Badge {
+          position: absolute;
+          top: 182px;
+          left: 28px;
+          .Badge-Image {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+          }
+        }
+        .Follow-Btn {
+          position: absolute;
+          top: 176px;
+          right: 20px;
+        }
+      }
+      .Content {
+        margin: 30px 0 10px 0;
+        text-align: center;
+        .Name {
+          font-size: 17px;
+          font-weight: 500;
+          color: #333;
+          margin-bottom: 4px;
+        }
+        .Position {
+          font-size: 13px;
+          font-weight: 300;
+          color: #333;
+          margin-bottom: 2px;
+        }
+        .Place {
+          font-size: 13px;
+          font-weight: 300;
+          color: #333;
+        }
+      }
+      .Button-Container {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 4px 0 12px 0;
+        .Message-Btn {
+          width: 118px;
+          background: #3B3434;
+          color: #FFFFFF;
+        }
+        .Block-Btn {
+          width: 118px;
+          background: #963F37;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
